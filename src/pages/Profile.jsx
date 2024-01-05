@@ -6,12 +6,12 @@ const Profile = () => {
   const { user, loading } = useContext(Context);
 
   return loading ? (
+    <Loader />
+  ) : (
     <div className="Profile">
       <h2>{user.name}</h2>
       <h3>{user.email}</h3>
     </div>
-  ) : (
-    <Loader />
   );
 };
 
