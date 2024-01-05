@@ -53,7 +53,7 @@ const Login = () => {
             placeholder="Password"
             required
           />
-          <button disabled={!loading} type="submit">Login</button>
+          <button disabled={loading} type="submit">Login</button>
           <h4>Or</h4>
           <Link to="/register">Sign Up</Link>
         </form>
