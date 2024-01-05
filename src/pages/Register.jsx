@@ -29,7 +29,7 @@ const Register = () => {
     setLoading(false);
 
     } catch (e) {
-      toast.success(e.res.data.message);
+      toast.success(e.response.data.message);
       setIsAuthenticated(false);
     setLoading(false);
 

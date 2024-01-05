@@ -27,7 +27,7 @@ const Login = () => {
       setIsAuthenticated(true);
       setLoading(false);
     } catch (e) {
-      toast.success(e.res.data.message);
+      toast.success(error.response.data.message);
       setIsAuthenticated(false);
       setLoading(false);
     }

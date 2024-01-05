@@ -21,7 +21,7 @@ const Header = () => {
       setLoading(false);
     } catch (e) {
       setLoading(false);
-      toast.success(e.res.data.message);
+      toast.success(e.response.data.message);
       setIsAuthenticated(true);
     }
   };
