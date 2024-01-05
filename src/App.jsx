@@ -11,8 +11,8 @@ import { Context, server } from "./main";
 
 function App() {
   const {setUser, setIsAuthenticated, setLoading} = useContext(Context);
-  setLoading(true);
   useEffect(()=>{
+    setLoading(true);
     axios.get(`${server}/users/me`,{
       withCredentials: true
     }).then((res)=>{

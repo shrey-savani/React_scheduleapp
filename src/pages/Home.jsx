@@ -45,8 +45,8 @@ const Home = () => {
 
   const submitHandler = async (e) => {
     setLoading(true);
+    e.preventDefault();
     try {
-      e.preventDefault();
       const { data } = await axios.post(
         `${server}/task/new`,
         { title, description },
